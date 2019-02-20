@@ -1,0 +1,54 @@
+<div class="card" *ngIf="user">
+  	<div class="card-header  text-white bg-primary" *ngIf="user">
+	  Details for {{user.firstName | uppercase}} {{user.lastName | uppercase}}
+	</div>
+	<div class="card-body">
+		<table class="table">
+			<tbody>
+				<tr>
+					<th scope="col">#</th>
+					<td>{{user.id}}</td>
+				</tr>
+				<tr>
+					<th class="align-middle" scope="col">first name</th>
+					<td>
+						<input  type="text" class="form-control" [(ngModel)]="user.firstName" placeholder="first name">
+					</td>
+				</tr>
+				<tr>
+					<th class="align-middle" scope="col">last name</th>
+					<td>
+						<input  type="text" class="form-control" [(ngModel)]="user.lastName" placeholder="last name">
+					</td>
+				</tr>
+				<tr>
+					<th class="align-middle" scope="col">email</th>
+					<td>
+						<input  type="email" class="form-control" [(ngModel)]="user.email" placeholder="email">
+					</td>
+				</tr>
+				<tr>
+					<th class="align-middle" scope="col">year of study</th>
+					<td>
+						<input  type="number" min="1" max="5" class="form-control" [(ngModel)]="user.yearOfStudy" placeholder="year of study">
+					</td>
+				</tr>
+				<tr>
+					<th class="align-middle" scope="col">field of study</th>
+					<td>
+						<input  type="text" class="form-control" [(ngModel)]="user.fieldOfStudy" placeholder="filed of study">
+					</td>
+				</tr>
+				<tr>
+					<th class="align-middle" scope="col">index number</th>
+					<td>
+						<input  type="text" class="form-control" [(ngModel)]="user.indexNumber" placeholder="index number">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<button type="button" class="btn btn-dark btn-block" (click)="goBack()">Back</button>
+		</div>
+	</div>
+</div>
