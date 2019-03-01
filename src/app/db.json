@@ -1,0 +1,12 @@
+[
+	{
+		id: 1,
+		firstName: null,
+		lastName: null,
+		email: "admin@javadev.pl",
+		password: "zaq1@WSX",
+		yearOfStudy: null,
+		fieldOfStudy: null,
+		indexNumber: null,
+	}
+]
